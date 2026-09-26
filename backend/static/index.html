@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Anti-Drone Detection Console</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header><h1>Anti-Drone Detection Console</h1><span id="mode">Detection-only</span></header>
+  <main>
+    <section class="video panel">
+      <div class="panel-title">LIVE CAMERA FEED</div>
+      <div class="feed"><div class="placeholder">Connect an ESP32-CAM stream to begin</div></div>
+      <div class="legend"><span class="dot green"></span> Camera online <span class="dot red"></span> Drone alert</div>
+    </section>
+    <section class="panel status"><div class="panel-title">SYSTEM STATUS</div><dl><dt>Backend</dt><dd id="backend">Checking…</dd><dt>Stream</dt><dd id="stream">Not configured</dd><dt>Last update</dt><dd id="updated">—</dd></dl></section>
+    <section class="panel alerts"><div class="panel-title">DETECTION EVENTS</div><div id="events">No detections recorded.</div></section>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>

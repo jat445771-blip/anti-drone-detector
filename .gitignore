@@ -1,0 +1,10 @@
+__pycache__/
+.venv/
+.env
+*.db
+*.sqlite*
+data/*
+!data/.gitkeep
+*.jpg
+*.jpeg
+*.mp4
